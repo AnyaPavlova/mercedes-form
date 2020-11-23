@@ -1,0 +1,32 @@
+.btn {
+    padding: 11px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    background: @color-blue;
+    display: inline-block;
+    transition: all 0.5s;
+
+    &:hover {
+        background: #00b9ff;
+    }
+
+    span {
+        position: relative;
+        padding-left: 16px;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 13px;
+            position: absolute;
+            left: 0;
+            top: 0; bottom: 0;
+            margin: auto;
+            background: url(../images/icons/arrow-right.svg) no-repeat;
+            background-size: contain;
+        }
+    }
+}

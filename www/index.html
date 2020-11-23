@@ -24,25 +24,161 @@
 
 <body class="body">
 <header class="header">
-    
+    <div class="header__top-block">
+        <div class="inner">
+            <div class="header-info">
+                <div class="header-info__logo-block">
+                    <a href="#" class="header-info__logo-link">
+                        <img src="./images/logo.png" alt="Logo" class="header-info__logo">
+                    </a>
+                </div>
+                <div class="header-info__text-block">
+                    <div class="header-info__links-block">
+                        <ul class="header-info__links">
+                            <li class="header-info__link-item"><a href="#" class="header-info__link">
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.429.5l6.428 6-6.428 6"/></svg>
+                                Специальные предложения
+                            </a></li>
+                            <li class="header-info__link-item"><a href="#" class="header-info__link"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.429.5l6.428 6-6.428 6"/></svg>Задать вопрос</a></li>
+                            <li class="header-info__link-item"><a href="#" class="header-info__link"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.429.5l6.428 6-6.428 6"/></svg>Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-info__contacts-block">
+                        <div class="header-info__contacts">
+                            <div class="header-info__name">ВАГНЕР - официальный дилер Mercedes-Benz</div>
+                            <div class="header-info__contact">
+                                <a href="tel:+78126036339" class="header-info__contact-item header-info__contact-item--phone">+7 (812) 603-63-39</a>
+                                <a href="#" class="header-info__contact-item header-info__contact-item--adress">Таллинское шоссе 157 лит. А</a>
+                            </div>
+                        </div>
+                        <div class="header-info__btns-block">
+                            <a href="#" class="header-info__btn-call btn"><span>Обратный звонок</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-info__mob-nav">
+                    <a href="tel:+78126036339" class="header-info__mob-phone">+7 (812) 603-63-39</a>
+                    <button type="button" class="burger" id="burger">
+                        <span class="burger__lines">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu-block">
+        <div class="inner">
+            <div class="header-menu">
+                <div class="header-menu__return-block">
+                    <a href="#" class="header-menu__return">ВАГНЕР Главная страница</a>
+                </div>
+                <div class="header-menu__menu-block">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Специальные предложения</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Сервис</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Финансовые услуги</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+                            <li class="menu__item menu__item--mob"><a href="tel:+78126036339" class="menu__link menu__link--mob-phone">+7 (812) 603-63-39</a></li>
+                            <li class="menu__item menu__item--mob"><a href="#" class="menu__link menu__link--mob-adress">Таллинское шоссе 157 лит. А</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <main class="main">
 
-<section class="info">
-    <div class="inner">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam quibusdam nisi incidunt atque officia dignissimos animi dolorem porro. Cumque blanditiis consectetur quod autem nihil, veniam eveniet dolore et officiis.</p>
-        <p>Ipsum tempora voluptatibus, eum blanditiis tenetur aliquam nulla adipisci fugiat ea corporis doloremque voluptas eveniet dolore totam dolor est sequi perspiciatis corrupti molestias reiciendis accusamus, consequuntur pariatur, rem at? Quo!</p>
-        <p>Dolorem aut et dolore. Cupiditate voluptatum eius quos fuga itaque ratione velit optio in asperiores nobis dolore voluptates, ducimus quis necessitatibus? Explicabo, illum reprehenderit quam aspernatur aliquid rerum soluta recusandae!</p>
-        <p>Ipsum quis saepe necessitatibus quibusdam molestias aspernatur, labore id error illum, distinctio quasi sed dolorum repellat rem expedita delectus modi porro repudiandae, et ratione maiores magnam nihil nulla. Veritatis, provident.</p>
-        <p>Fugit error, maiores, cupiditate odio architecto nemo aliquam corrupti voluptates neque ullam omnis repellat! Fugit corporis magnam aliquid nostrum possimus sunt quia cupiditate accusantium! Necessitatibus iste in molestiae perferendis distinctio!</p>
-        <img src="./images/cats.jpg" alt="Cats">
+<section class="reservation">
+    <div class="inner reservation__inner">
+        <h1 class="reservation__title">Предоплата и резервирование автомобиля</h1>
+
+        <div class="reservation__form-block">
+            <form class="reservation-form" action="jquery-mailer.php" method="post" novalidate>
+                <input type="hidden" value="reservation" name="formType" />
+                <input value="Форма резервирование автомобиля" type="hidden" name="formSubject" />
+
+                <div class="row reservation-form__row">
+                    <div class="col col-4 reservation-form__col">
+                        <div class="reservation-form__for-input">
+                            <label class="reservation-form__label-input">Фамилия<span>*</span></label>
+                            <input type="text" name="secondname" class="reservation-form__input" required>
+                        </div>
+                    </div>
+                    <div class="col col-4 reservation-form__col">
+                        <div class="reservation-form__for-input">
+                            <label class="reservation-form__label-input">Имя<span>*</span></label>
+                            <input type="text" name="name" class="reservation-form__input" required>
+                        </div>
+                    </div>
+                    <div class="col col-4 reservation-form__col">
+                        <div class="reservation-form__for-input">
+                            <label class="reservation-form__label-input">Ваш телефон<span>*</span></label>
+                            <input type="tel" name="phone" class="reservation-form__input form-phone" required>
+                        </div>
+                    </div>
+                    <div class="col col-12 reservation-form__col">
+                        <div class="reservation-form__agree-block">
+                            <div class="reservation-form__for-checkbox">
+                                <input class="reservation-form__checkbox" id="agree2" type="checkbox" name="agree[]" value="Согласие на обработку запроса" required>
+                                <label for="agree2" class="reservation-form__label-checkbox">
+                                    <span class="reservation-form__check"></span>
+                                    <span class="reservation-form__check-text">Я согласен на обработку данных <a href="#">(2)</a></span>
+                                </label>
+                            </div>
+                            <div class="reservation-form__for-checkbox">
+                                <input class="reservation-form__checkbox" id="agree1" type="checkbox" name="agree[]" value="Согласие на обработку запроса" required>
+                                <label for="agree1" class="reservation-form__label-checkbox">
+                                    <span class="reservation-form__check"></span>
+                                    <span class="reservation-form__check-text">Получать рекламную информацию <a href="#">(1)</a></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 reservation-form__col">
+                        <div class="reservation-form__btns-block">
+                            <button type="submit" class="btn reservation-form__btn">Внести предоплату</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
     </div>
 </section>
 
 </main>
 <footer class="footer">
-    
+    <div class="inner">
+        <div class="row footer__row">
+            <div class="col col-10 col-lg-12">
+                <div class="footer__text-block">
+                    <p class="footer__text">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 (2) Гражданского кодекса Российской Федерации.</p>
+                    <p class="footer__note-text">Точную стоимость автомобиля уточняйте у продавца-консультанта</p>
+                    <p class="footer__note-text">Реальный цвет автомобиля и оснащение могут отличаться от показанного на изображении</p>
+                </div>
+                <div class="footer__info-block">
+                    <div class="footer__copyright">©2020. «Мерседес-Бенц» ВАГНЕР.</div>
+                    <div class="footer__links-block">
+                        <ul class="footer__links">
+                            <li class="footer__links-item"><a href="#" class="footer__link">Cookies</a></li>
+                            <li class="footer__links-item"><a href="#" class="footer__link">Защита данных</a></li>
+                            <li class="footer__links-item"><a href="#" class="footer__link">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="footer__top" id="scroll-top">К началу</span>
 </footer>
 
 

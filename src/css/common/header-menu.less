@@ -1,0 +1,27 @@
+.header-menu {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+
+    &__return-block {
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__return {
+        text-decoration: none;
+        font-size      : 16px;
+        color          : #212121;
+
+        &:hover {
+            color: @color-blue;
+        }
+    }
+
+    &__menu-block {
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+    }
+}
