@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница | LikaMoon</title>
+    <title>Предоплата и резервирование автомобиля | Mercedes-Benz</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap&subset=cyrillic" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
@@ -100,6 +100,14 @@
     <div class="inner reservation__inner">
         <h1 class="reservation__title">Предоплата и резервирование автомобиля</h1>
 
+        <div class="reservation__text-block">
+            <ul class="reservation__list">
+                <li>Предоплата сохраняет условия и идет в зачет полной стоимости автомобиля</li>
+                <li>Моментальный возврат предоплаты в полном объеме без комиссии</li>                
+                <li>Персональный менеджер расскажет о выдаче автомобиля и ответит на вопросы</li>
+            </ul>
+        </div>
+
         <div class="reservation__form-block">
             <form class="reservation-form" action="jquery-mailer.php" method="post" novalidate>
                 <input type="hidden" value="reservation" name="formType" />
@@ -140,6 +148,13 @@
                                     <span class="reservation-form__check-text">Получать рекламную информацию <a href="#">(1)</a></span>
                                 </label>
                             </div>
+                            <div class="reservation-form__for-checkbox">
+                                <input class="reservation-form__checkbox" id="agree3" type="checkbox" name="agree[]" value="Согласие на обработку запроса" required>
+                                <label for="agree3" class="reservation-form__label-checkbox">
+                                    <span class="reservation-form__check"></span>
+                                    <span class="reservation-form__check-text">Согласен с <a href="reservation-rules.html">Правилами оказания услуг по резервированию товаров на сайте</a> </span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="col col-12 reservation-form__col">
@@ -150,6 +165,10 @@
                 </div>
 
             </form>
+        </div>
+
+        <div class="reservation__text-block">
+            <p class="reservation__text">Нажав кнопку "Внести предоплату", Вы получите на указанный адрес почты уникальную ссылку на платежный сервис для внесения платежа.</p>            
         </div>
 
     </div>
